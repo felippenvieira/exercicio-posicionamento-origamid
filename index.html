@@ -10,26 +10,32 @@
 </head>
 
 <body>
-  <div class="titulo"><img src="img/bikcraft.svg" alt="logo bikcraft"></div>
-  <div class="menu">
-    <a href="#sobre">Sobre</a>
-    <a href="#produtos">Produtos</a>
-    <a href="#lojas">Lojas</a>
-    <a href="#contato">Contato</a>
-  </div>
+  <header>
+    <div class="titulo"><img src="img/bikcraft.svg" alt="logo bikcraft"></div>
 
-  <div class="conteudo">
-    <div class="info">
-      <span class="detalhe"></span>
-      <h2 class="conteudo-titulo">Bicicletas Feitas a Mão</h2>
+    <nav>
+      <ul class="menu" aria-label="primaria">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#produtos">Produtos</a></li>
+        <li><a href="#lojas">Lojas</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="conteudo">
+    <article class="info" aria-labelledby="label-introducao">
+      <h2 id="label-introducao" class="conteudo-titulo">Bicicletas Feitas a Mão</h2>
       <p class="conteudo-texto">A Nimbus Stark é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios da marca.</p>
       <a href="" class="conteudo-botao">Ver Mais</a>
-    </div>
+    </article>
 
     <div class="img"><img src="img/bicicleta.jpg" alt="bikcraft nimbus"></div>
+
     <h2 class="vantagens">Vantagens Bikcraft</h2>
-    <div class="caracteristicas">
-      <div class="caracteristicas-grid">
+
+    <article class="caracteristicas" aria-labelledby="label-vantagens">
+      <div id="label-vantagens" class="caracteristicas-grid">
         <img src="img/eletrica.svg" alt="">
         <div class="primeira-caracteristica">
           <h3 class="caracteristica-titulo">Motor Elétrico</h3>
@@ -53,12 +59,12 @@
         </div>
       </div>
 
-    </div>
-  </div>
+    </article>
+  </main>
 
-  <div class="rodape">
+  <footer class="rodape">
     <p>Bikcraft. Alguns Direitos Reservados.</p>
-  </div>
+  </footer>
 
   <script src="scripts/script.js"></script>
 </body>
